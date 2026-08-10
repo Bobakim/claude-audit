@@ -50,7 +50,6 @@ export function LoginForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (validateForm()) {
-      console.log('로그인 데이터:', formData)
       // 여기에 로그인 로직을 추가하세요
     }
   }
