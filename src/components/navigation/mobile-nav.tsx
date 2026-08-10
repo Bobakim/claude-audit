@@ -7,8 +7,14 @@ import { Separator } from '@/components/ui/separator'
 
 const navItems = [
   { title: '홈', href: '/' },
-  { title: '로그인', href: '/login' },
+  { title: '계정과목', href: '/accounts' },
+  { title: '사례', href: '/cases' },
+  { title: '분류체계', href: '/taxonomy' },
 ]
+
+function isActive(pathname: string, href: string) {
+  return href === '/' ? pathname === '/' : pathname.startsWith(href)
+}
 
 interface MobileNavProps {
   onClose: () => void
@@ -30,7 +36,9 @@ export function MobileNav({ onClose }: MobileNavProps) {
               onClick={onClose}
               className={cn(
                 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block rounded-md px-2 py-1.5 text-sm leading-none font-medium no-underline transition-colors outline-none select-none',
-                pathname === item.href ? 'bg-accent text-accent-foreground' : ''
+                isActive(pathname, item.href)
+                  ? 'bg-accent text-accent-foreground'
+                  : ''
               )}
             >
               {item.title}

@@ -27,6 +27,9 @@
 # 감리지적사례 원문 PDF (사내 한정 재배포 정책 — 저장소 커밋 금지, data/audit-cases/README.md 참고)
 /data/audit-cases/raw/
 
+# shrimp-task-manager 내부 상태(세션마다 누적되는 타임스탬프 스냅샷) — 도구 생성 캐시성 데이터
+/shrimp_data/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

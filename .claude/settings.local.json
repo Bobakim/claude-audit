@@ -11,7 +11,9 @@
       "mcp__sequential-thinking",
       "mcp__shadcn__search_items_in_registries",
       "mcp__context7__resolve-library-id",
-      "mcp__context7__get-library-docs"
+      "mcp__context7__get-library-docs",
+      "mcp__shrimp-task-manager__verify_task",
+      "mcp__shrimp-task-manager__execute_task"
     ],
     "deny": [],
     "ask": []
